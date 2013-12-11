@@ -15,9 +15,8 @@ header {
   display: none;
   bottom: 0;
   background: rgba(255, 255, 255, 0.8);
-  -moz-box-shadow: #aaaaaa 0 3px 5px;
   -webkit-box-shadow: #aaaaaa 0 3px 5px;
-  -o-box-shadow: #aaaaaa 0 3px 5px;
+  -moz-box-shadow: #aaaaaa 0 3px 5px;
   box-shadow: #aaaaaa 0 3px 5px;
   height: 70px;
 }
@@ -82,7 +81,7 @@ section#main h2 {
   text-shadow: #2a5b8d 2px 2px 3px;
   margin-top: -300px;
   color: #fff;
-  font-size: 47px;
+  font-size: 43px;
   font-weight: 700;
   opacity: 0;
 }
@@ -139,7 +138,7 @@ section#information ul li {
   font-size: 18px;
   font-weight: bold;
   font-family: "Raleway", sans-serif;
-  padding-right: 90px;
+  padding-right: 128px;
   padding-bottom: 3px;
 }
 section#information ul li a {
@@ -156,33 +155,40 @@ section#information ul li:last-child {
 section#information div.slide {
   margin: 30px auto;
   padding-top: 10px;
+  background: aliceblue;
+  padding: 20px 50px;
+  -webkit-box-shadow: #cccccc 0 0 1px 1px;
+  -moz-box-shadow: #cccccc 0 0 1px 1px;
+  box-shadow: #cccccc 0 0 1px 1px;
+  background: #fefefe;
 }
 section#information div.slide div.left {
-  width: 50%;
-  float: left;
+  width: 100%;
+  padding-bottom: 10px;
 }
-section#information div.slide div.right {
-  width: 50%;
+section#information div.slide div.left img {
+  width: 120px;
+  margin: 0px auto;
+  display: block;
   float: left;
-}
-section#information div.slide div.right img {
-  max-width: 100%;
 }
 section#information div.slide h4 {
   font-size: 25px;
   font-family: "Raleway", sans-serif;
   line-height: 150%;
+  margin-left: 150px;
   text-align: left;
-  color: #211;
+  color: #999;
   font-weight: 300;
   margin-top: 10px;
 }
 section#information div.slide p {
   font-size: 14px;
+  margin-left: 150px;
   font-family: "Oxygen", sans-serif;
-  line-height: 150%;
+  line-height: 170%;
   text-align: left;
-  color: #211;
+  color: #aaa;
   font-weight: 300;
   margin-top: 10px;
 }
@@ -226,11 +232,10 @@ section#team div.person img {
   float: right;
   width: 150px;
   margin: 0px auto 20px;
-  -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
-  -o-border-radius: 100px;
+  -moz-border-radius: 100px;
   -ms-border-radius: 100px;
-  -khtml-border-radius: 100px;
+  -o-border-radius: 100px;
   border-radius: 100px;
   margin-bottom: 30px;
   display: block;
@@ -292,9 +297,8 @@ section#about h2.main {
 section#about div.top {
   background: #fff;
   padding: 30px 60px 40px;
-  -moz-box-shadow: #cccccc;
   -webkit-box-shadow: #cccccc;
-  -o-box-shadow: #cccccc;
+  -moz-box-shadow: #cccccc;
   box-shadow: #cccccc;
   display: block;
   width: 832px;
@@ -399,7 +403,7 @@ section#about div.center {
 }
 section#about input[type='text'] {
   width: 400px;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   padding: 10px;
   font-family: "Oxygen", sans-serif;
   font-size: 20px;
@@ -498,11 +502,20 @@ footer ul li a:hover {
     margin-top: 0;
   }
   section#information div#slides div.slide div.left {
-    min-width: 195px;
     margin: 0 auto;
-    max-width: 80%;
+    max-width: 100%;
     float: none;
     width: 100%;
+  }
+  section#information div#slides div.slide div.left img {
+    float: none;
+    width: 60px;
+    display: block;
+    margin: 0 auto 10px;
+  }
+  section#information div#slides div.slide div.left h4, section#information div#slides div.slide div.left p {
+    margin-left: 0;
+    text-align: center;
   }
   section#information div#slides div.slide div.right {
     margin-top: 30px;
@@ -619,7 +632,6 @@ footer ul li a:hover {
     margin-top: 0;
   }
   section#information div#slides div.slide div.left {
-    min-width: 480px;
     float: none;
   }
   section#information div#slides div.slide div.right {
