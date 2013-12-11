@@ -292,7 +292,7 @@ section#about h2.main {
   text-transform: uppercase;
   font-weight: 400;
   text-align: center;
-  color: #485260;
+  color: #990000;
 }
 section#about div.top {
   background: #fff;
@@ -342,7 +342,7 @@ section#about div.left {
   float: left;
 }
 section#about div.left input[type='text'] {
-  width: 240px;
+  width: 234px;
   padding: 10px;
   float: left;
   margin-right: 15px;
@@ -350,15 +350,21 @@ section#about div.left input[type='text'] {
   font-family: "Oxygen", sans-serif;
   margin-bottom: 15px;
   border: 0;
-  background: #990000;
+  background: #D95128;
+  border: 3px solid #990000;
   font-size: 14px;
   color: #333;
 }
 section#about div.left input[type='text']:-moz-placeholder {
-  color: white;
+  color: #990000;
 }
 section#about div.left input[type='text']::-webkit-input-placeholder {
-  color: white;
+  color: #990000;
+}
+section#about div.left input[type='text']:focus {
+  -webkit-box-shadow: #ffcdcd 0 0 3px 0;
+  -moz-box-shadow: #ffcdcd 0 0 3px 0;
+  box-shadow: #ffcdcd 0 0 3px 0;
 }
 section#about div.left textarea {
   width: 515px;
@@ -366,26 +372,27 @@ section#about div.left textarea {
   padding: 10px;
   float: left;
   border: 0;
-  background: #990000;
+  background: #D95128;
+  border: 3px solid #990000;
   font-size: 14px;
   text-transform: uppercase;
   font-family: "Oxygen", sans-serif;
   color: #333;
 }
 section#about div.left textarea:-moz-placeholder {
-  color: white;
+  color: #990000;
 }
 section#about div.left textarea::-webkit-input-placeholder {
-  color: white;
+  color: #990000;
 }
 section#about div.left input[type='submit'] {
   border: 0;
   background: #D95128;
-  float: right;
+  float: left;
   margin-right: 15px;
   margin-top: 15px;
-  border: 3px solid #990000;
-  color: #990000;
+  background: #990000;
+  color: #D95128;
   font-family: "Raleway", sans-serif;
   padding: 12px 30px 11px;
   font-size: 20px;
