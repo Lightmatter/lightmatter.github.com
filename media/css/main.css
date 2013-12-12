@@ -25,7 +25,7 @@ header h1 {
   float: left;
 }
 header h1 a {
-  background: url('../img/logo.png?1386347131');
+  background: url('../img/logo.png?1386790975');
   background-size: 100%;
   display: block;
   width: 200px;
@@ -67,7 +67,7 @@ div.header-alias {
 
 section#main {
   width: 100%;
-  background: url('../img/background_place.png?1386615501');
+  background: url('../img/background_place.png?1386790975');
   background-size: 100%;
   font-family: "Oxygen", sans-serif;
   position: fixed;
@@ -126,7 +126,7 @@ section#information h3 {
   font-family: "Oxygen", sans-serif;
   line-height: 180%;
   text-align: center;
-  color: #b6c0cd;
+  color: #3f3f3f;
   font-weight: 300;
   padding-bottom: 30px;
 }
@@ -178,7 +178,7 @@ section#information div.slide h4 {
   line-height: 150%;
   margin-left: 150px;
   text-align: left;
-  color: #999;
+  color: #3f3f3f;
   font-weight: 300;
   margin-top: 10px;
 }
@@ -188,7 +188,7 @@ section#information div.slide p {
   font-family: "Oxygen", sans-serif;
   line-height: 170%;
   text-align: left;
-  color: #aaa;
+  color: #3f3f3f;
   font-weight: 300;
   margin-top: 10px;
 }
@@ -214,7 +214,7 @@ section#team h3 {
   font-family: "Oxygen", sans-serif;
   line-height: 180%;
   text-align: center;
-  color: #b6c0cd;
+  color: #3f3f3f;
   font-weight: 300;
   margin-top: 10px;
   padding-bottom: 30px;
@@ -254,7 +254,7 @@ section#team div.person h4 {
 }
 section#team div.person h4 span {
   font-size: 14px;
-  color: #777;
+  color: #3f3f3f;
   font-weight: 300;
 }
 section#team div.person p {
@@ -263,7 +263,7 @@ section#team div.person p {
   width: 250px;
   font-size: 14px;
   font-weight: 300;
-  color: #aaa;
+  color: #3f3f3f;
   line-height: 170%;
   padding: 0 20px;
 }
@@ -410,7 +410,7 @@ section#about div.center {
 }
 section#about input[type='text'] {
   width: 400px;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   padding: 10px;
   font-family: "Oxygen", sans-serif;
   font-size: 20px;
@@ -469,7 +469,7 @@ footer ul li a:hover {
   }
 
   section#main {
-    background: url('../img/background_place.png?1386615501');
+    background: url('../img/background_place.png?1386790975');
     background-size: cover;
     background-position: center;
   }
@@ -523,6 +523,7 @@ footer ul li a:hover {
   section#information div#slides div.slide div.left h4, section#information div#slides div.slide div.left p {
     margin-left: 0;
     text-align: center;
+    color: #3f3f3f;
   }
   section#information div#slides div.slide div.right {
     margin-top: 30px;
@@ -604,7 +605,7 @@ footer ul li a:hover {
 }
 @media all and (min-width: 681px) and (max-width: 980px) {
   section#main {
-    background: url('../img/background_place.png?1386615501');
+    background: url('../img/background_place.png?1386790975');
     background-size: cover;
   }
   section#main h2 {
@@ -658,6 +659,7 @@ footer ul li a:hover {
   }
   section#team div.person p {
     font-size: 12px;
+    color: #3f3f3f;
   }
   section#team div.person:nth-child(even) {
     margin-right: auto;
