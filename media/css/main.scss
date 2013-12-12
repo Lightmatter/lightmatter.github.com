@@ -319,7 +319,7 @@ section#about {
   padding: 20px 0 60px;
   position: relative;
   //background: #404853;
-  background: #D95128;
+  background: #c9c9c9;
   width: 100%;
   z-index: 2;
 
@@ -330,7 +330,7 @@ section#about {
     text-transform: uppercase;
     font-weight: 400;
     text-align: center;
-    color: #990000;
+    color: #495361;
   }
 
   div.top {
@@ -339,7 +339,7 @@ section#about {
     @include box-shadow(#ccc);
     display: block;
     width: 832px;
-    border-left: 8px solid #990000;
+    border-left: 8px solid #D95127;
 
     h3 {
       font-size: 28px;
@@ -394,11 +394,11 @@ section#about {
       font-family: $oxygen;
       margin-bottom: 15px;
       border: 0;
-      @include placeholder(#900);
-      background: #D95128;
-      border: 3px solid #990000;
+      @include placeholder(#49535F);
+      background: #E0E0E0;
+      border: 3px solid #49535F;
       font-size: 14px;
-      color: #333;
+      color: #49535F;
 
       &:focus {
         @include box-shadow(#FFCDCD 0 0 3px 0);
@@ -411,27 +411,30 @@ section#about {
       padding: 10px;
       float: left;
       border: 0;
-      @include placeholder(#900);
-      background: #D95128;
-      border: 3px solid #990000;
+      @include placeholder(#49535F);
+      background: #E0E0E0;
+      border: 3px solid #49535F;
       font-size: 14px;
       text-transform: uppercase;
       font-family: $oxygen;
-      color: #333;
+      color: #49535F;
     }
 
     input[type='submit'] {
       border: 0;
-      background: #D95128;
       float: left;
       margin-right: 15px;
       margin-top: 15px;
-      background:#990000;
-      color: #D95128;
+      background:#49535F;
+      color: #fff;
       font-family: $raleway;
       padding: 12px 30px 11px;
       font-size: 20px;
       text-transform: uppercase;
+      &:hover {
+        cursor: pointer;
+        background: #0D4459
+      }
     }
   }
 
@@ -636,6 +639,7 @@ footer {
     }
   }
   section#about  {
+
     div.top {
       width: 70%;
       padding: 10px;

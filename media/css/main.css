@@ -281,7 +281,7 @@ section#about {
   margin-bottom: 0;
   padding: 20px 0 60px;
   position: relative;
-  background: #D95128;
+  background: #c9c9c9;
   width: 100%;
   z-index: 2;
 }
@@ -292,7 +292,7 @@ section#about h2.main {
   text-transform: uppercase;
   font-weight: 400;
   text-align: center;
-  color: #990000;
+  color: #495361;
 }
 section#about div.top {
   background: #fff;
@@ -302,7 +302,7 @@ section#about div.top {
   box-shadow: #cccccc;
   display: block;
   width: 832px;
-  border-left: 8px solid #990000;
+  border-left: 8px solid #D95127;
 }
 section#about div.top h3 {
   font-size: 28px;
@@ -350,16 +350,16 @@ section#about div.left input[type='text'] {
   font-family: "Oxygen", sans-serif;
   margin-bottom: 15px;
   border: 0;
-  background: #D95128;
-  border: 3px solid #990000;
+  background: #E0E0E0;
+  border: 3px solid #49535F;
   font-size: 14px;
-  color: #333;
+  color: #49535F;
 }
 section#about div.left input[type='text']:-moz-placeholder {
-  color: #990000;
+  color: #49535f;
 }
 section#about div.left input[type='text']::-webkit-input-placeholder {
-  color: #990000;
+  color: #49535f;
 }
 section#about div.left input[type='text']:focus {
   -webkit-box-shadow: #ffcdcd 0 0 3px 0;
@@ -372,31 +372,34 @@ section#about div.left textarea {
   padding: 10px;
   float: left;
   border: 0;
-  background: #D95128;
-  border: 3px solid #990000;
+  background: #E0E0E0;
+  border: 3px solid #49535F;
   font-size: 14px;
   text-transform: uppercase;
   font-family: "Oxygen", sans-serif;
-  color: #333;
+  color: #49535F;
 }
 section#about div.left textarea:-moz-placeholder {
-  color: #990000;
+  color: #49535f;
 }
 section#about div.left textarea::-webkit-input-placeholder {
-  color: #990000;
+  color: #49535f;
 }
 section#about div.left input[type='submit'] {
   border: 0;
-  background: #D95128;
   float: left;
   margin-right: 15px;
   margin-top: 15px;
-  background: #990000;
-  color: #D95128;
+  background: #49535F;
+  color: #fff;
   font-family: "Raleway", sans-serif;
   padding: 12px 30px 11px;
   font-size: 20px;
   text-transform: uppercase;
+}
+section#about div.left input[type='submit']:hover {
+  cursor: pointer;
+  background: #0d4459;
 }
 section#about div.right {
   width: 400px;
