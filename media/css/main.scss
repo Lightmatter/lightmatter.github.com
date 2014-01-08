@@ -29,21 +29,22 @@ header {
   height: 70px;
 
   h1 {
-    margin-top: 15px;
+    margin-top: 12px;
     float: left;
 
     a {
       background: image-url('logo.png');
       background-size: 100%;
       display: block;
+      background-repeat: no-repeat;
       width: 200px;
-      height: 36px;
+      height: 51px;
     }
   }
   
   ul {
     float: right;
-    margin-top: 20px;
+    margin-top: 23px;
 
     li {
       display: inline-block;
@@ -118,7 +119,7 @@ section#main {
     text-shadow: #2a5b8d 1px 1px 1px;
     line-height: 140%;
     font-weight: 300;
-    font-size: 24px;
+    font-size: 38px;
     position: relative;
     margin-top: 15px;
     opacity: 0;
