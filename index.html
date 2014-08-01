@@ -19,7 +19,7 @@
     <meta property="og:image" content="" />
     <meta property="fb:page_id" content="" />
     <meta name="keywords" content="django developers, django developer new york city, web application development, mobile application development company, mobile application developer, html5 development, new york city development, new york city developer, create android app, iphone apps development"/>
-    
+
 
     <!-- Google Site Verification -->
     <meta name='google-site-verification' content="" />
@@ -37,7 +37,7 @@
        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
        })();
      </script>
-  
+
 
 </head>
 <body>
@@ -79,10 +79,10 @@
     <div class='container'>
       <h2>
         <img src='media/img/logo_raw.png' />
-        
+
       </h2>
       <h3>Lightmatter's mission is to empower companies and our community through digital innovation.</h3>
-     
+
 
     </div>
   </section>
@@ -125,7 +125,7 @@
           <div class='left'>
             <img src='media/img/design_icon.png' />
             <h4>Keeping engagement simple</h4>
-            <p>Design is a massive differentiator amongst consumer and enterprise products. The Lightmatter design team can distill the most complex objectives and user scenarios into simple interactions that make sense. Whether it's a mobile site or an enterprise-ready application, we combine proven design principles with the latest web standards to build beautiful applications that work everywhere.</p>  
+            <p>Design is a massive differentiator amongst consumer and enterprise products. The Lightmatter design team can distill the most complex objectives and user scenarios into simple interactions that make sense. Whether it's a mobile site or an enterprise-ready application, we combine proven design principles with the latest web standards to build beautiful applications that work everywhere.</p>
             <div class='clear'></div>
           </div>
         </div>
@@ -156,7 +156,7 @@
       <div class='person'>
         <img src='media/img/ryan.png' />
         <h4>Ryan Hinchey <span> - Product</span></h4>
-        <p>Ryan leads Lightmatter's growth, strategy and supports product design. Previously he worked for Sapient Nitro, was CEO of Worry Free Labs, a 20+ person digital design agency and led US enterprise sales at Ceros, a venture backed enterprise software company. 
+        <p>Ryan leads Lightmatter's growth, strategy and supports product design. Previously he worked for Sapient Nitro, was CEO of Worry Free Labs, a 20+ person digital design agency and led US enterprise sales at Ceros, a venture backed enterprise software company.
         </p>
       </div>
       <div class='person'>
@@ -168,7 +168,7 @@
       <div class='person'>
         <img src='media/img/nicole.png' />
         <h4>Nicole Rufuku <span> - Design</span></h4>
-        <p>Nicole leads Lightmatter's user experience, innovation strategy and product management. Previously she worked in product strategy and customer insights for Microsoft, Publicis, and Seamless. 
+        <p>Nicole leads Lightmatter's user experience, innovation strategy and product management. Previously she worked in product strategy and customer insights for Microsoft, Publicis, and Seamless.
         </p>
       </div>
       <div class='person'>
@@ -179,14 +179,14 @@
       <div class='person'>
         <img src='media/img/rich.png' />
         <h4>Rich Littlehale <span> - Product</span></h4>
-        <p>Rich supports strategy, partnerships and innovation consulting. Previously, he cofounded Elm City Labs, 
-          an early stage company incubator that helped launch over 30 companies and YouRenew, an electronics recycling company acquired by Clover Wireless in 2012. 
+        <p>Rich supports strategy, partnerships and innovation consulting. Previously, he cofounded Elm City Labs,
+          an early stage company incubator that helped launch over 30 companies and YouRenew, an electronics recycling company acquired by Clover Wireless in 2012.
         </p>
       </div>
       <div class='person'>
         <img src='media/img/james.png' />
         <h4>James Johnson <span> - Development</span></h4>
-        <p>James is a full-stack developer at Lightmatter and supports architecting web and mobile applications. Previously James cofounded Elm City Labs, an early stage company incubator that helped launch over 30 companies and was Director of Operations at YouRenew. 
+        <p>James is a full-stack developer at Lightmatter and supports architecting web and mobile applications. Previously James cofounded Elm City Labs, an early stage company incubator that helped launch over 30 companies and was Director of Operations at YouRenew.
 </p>
       </div>
       <div class='clear'></div>
@@ -269,6 +269,7 @@ $(function() {
   });
 
   $('#submit').click(function(e) {
+    send_email();
     e.preventDefault()
     var email = $('#email').val();
     var name = $('#name').val();
@@ -285,7 +286,7 @@ $(function() {
       'message': message
     }, {
       success: function(object) {
-        alert("Thanks");
+        alert("Thank you for reaching out to us!  We'll be in touch soon.");
       }
     });
   });
@@ -358,5 +359,51 @@ function loadTags() {
     }, 500);
   });
 }
+
+function send_email() {
+
+  var email = $('#email').val();
+  var name = $('#name').val();
+  var company = $('#company').val();
+  var phone = $('#phone').val();
+  var message = $('#message').val();
+
+  $.ajax({
+    type: "POST",
+    url: "https://mandrillapp.com/api/1.0/messages/send.json",
+    data: {
+      "key" : "yaSJAsLppHUIb6NH3WQQsQ",
+      "message" : {
+        "from_email" : "hello@lightmatter.com",
+        "to" : [
+          {
+            "email" : "ryan@lightmatter.com",
+            "name" : "Ryan Hinchey",
+            "type" : "to"
+          },
+          {
+            "email" : "greg@lightmatter.com",
+            "name" : "Greg Hausheer",
+            "type" : "to"
+          },
+          {
+            "email" : "ben@lightmatter.com",
+            "name" : "Ben",
+            "type" : "to"
+          }
+        ],
+        "autotext" : "true",
+        "subject" : "New Inbound from Website",
+        "html" : "<p> You have a new message from: " + name + ". </p> <p> They're email is: " + email + ", they're phone is: " + phone + "and they're company is: "  + company + " </p> <p> Here's the message : " + message + "</p>"
+      }
+    }
+  });
+}
+
+
+
 </script>
+
+
+
 </html>
