@@ -68,7 +68,7 @@ div.header-alias {
 
 section#main {
   width: 100%;
-  background: url('../img/background_place.png?1387404344');
+  background: url('../img/background_place_2.jpg?1408123232');
   background-size: cover;
   font-family: "Oxygen", sans-serif;
   position: fixed;
@@ -473,7 +473,7 @@ footer ul li a:hover {
   }
 
   section#main {
-    background: url('../img/background_place.png?1387404344');
+    background: url('../img/background_place.png?1408123093');
     background-size: cover;
     background-position: center;
   }
@@ -609,7 +609,7 @@ footer ul li a:hover {
 }
 @media all and (min-width: 681px) and (max-width: 980px) {
   section#main {
-    background: url('../img/background_place.png?1387404344');
+    background: url('../img/background_place.png?1408123093');
     background-size: cover;
   }
   section#main h2 {
